@@ -1,23 +1,19 @@
 body{
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 .container{
     background-color: #A6D9F7;
-    margin-top: 4%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-top: 2%;
+    margin-left: 25%;
+    margin-right: 25%;
     text-align: center;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 0.3);
-    padding: 2%;
+    padding: 1%;
 }
 
 .container tr{
     text-align: left;
-}
-
-.container td{
-    padding : 10px;
 }
 
 
@@ -40,3 +36,38 @@ body{
     height: 25px;
 
 }
+
+.button {
+    background-color: white; 
+  color: black; 
+  border: 2px solid #A6D9F7;
+  /* border: none; */
+  padding: 7px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  /* transition-duration: 0.4s; */
+  cursor: pointer;
+  box-shadow: 7px 7px 5px rgb(0 0 0 / 0.3);
+  }
+
+  .button:hover {
+    background-color: #A6D9F7;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 0.8);
+    /* border: 1px black; */
+  }
+
+  .reset{
+    margin-left: 30px;
+    border-radius: 50%;
+    padding: 7px 10px;
+    font-size: 20px;
+    border: 2px solid #fc2727;
+  }
+
+  .reset:hover{
+    background-color: #fc2727;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 0.8);
+  }
