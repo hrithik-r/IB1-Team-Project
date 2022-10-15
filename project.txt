@@ -1,0 +1,14 @@
+Colors: White for primary color #FAFFFD
+        Blue secondary #A6D9F7
+
+Modules:1) A and B for Hrithik(Login form/Registration form and Asset definition)
+        2) Akshay Module C
+        3) Arun Module D
+        4) Chandradeep Module E
+
+Font: Open Sans
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+Sidebar for navigation.
