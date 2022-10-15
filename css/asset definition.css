@@ -1,0 +1,42 @@
+body{
+
+}
+
+.container{
+    background-color: #A6D9F7;
+    margin-top: 4%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 0.3);
+    padding: 2%;
+}
+
+.container tr{
+    text-align: left;
+}
+
+.container td{
+    padding : 10px;
+}
+
+
+.form_item input{
+    outline: none;
+    border: hidden;
+    padding-left: 10px;
+    width: 95%;
+    cursor: pointer;
+    height: 25px;
+
+}
+
+.form_item select{
+    outline: none;
+    border: hidden;
+    padding-left: 5px;
+    width: 95%;
+    cursor: pointer;
+    height: 25px;
+
+}
