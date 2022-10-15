@@ -48,13 +48,14 @@ body{
 }
 .form_submit{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    gap:10px;
 }
 .submit_button{
-    width: 300px;
+    width: 120px;
     height: 30px;
-    background-color:#A6D9F7 ;
+    background-color:#81d3fc ;
     display: flex;
     justify-content: center;
     border: none;
@@ -66,5 +67,5 @@ body{
 }
 
 .submit_button:hover{
-    background-color:#81d3fc;
+    background-color:#45baf5;
 }
