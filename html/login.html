@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <h1 align="center">Login</h1>
+    <div class="container">
+        
+        <form action="vendor.html" name="login">
+            <table align="center" cellpadding="8">
+                <tr>
+                    <td><label for="username">Username</label></td>
+                    <td><input type="text" id="username" placeholder="Username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password" placeholder="Password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="user-type">Select User Type</label></td>
+                    <td><input type="radio" name="user-type" value="admin">Admin
+                        <input type="radio" name="user-type" value="prod_manager">Product Manager
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="login" type="submit" value="Login"></td>
+                </tr>
+                <tr>
+                    <td><a href="register.html" class="link">New User? Register here!</a></td>
+                </tr>
+                
+            </table>
+        </form>
+    </div>
+</body>
+</html>
