@@ -64,3 +64,6 @@ body{
     border-radius: 5px;
     margin-top: 5px;
 }
+.footer a{
+    text-decoration: none;
+}
