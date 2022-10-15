@@ -1,0 +1,75 @@
+:root{
+    --primary-col:#FAFFFD;
+    --secondary-col:#A6D9F7;
+}
+body{
+    background-color: var(--primary-col);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    /* color: var(--secondary-col); */
+    background-color: var(--primary-col);
+    
+}
+.asset-master{
+    background-color: var(--secondary-col);
+    /* color: var(--primary-col); */
+    /* max-width: 800px; */
+    position: relative;
+    margin-left: 15%;
+    margin-right: 15%;
+    box-shadow: 7px 7px 5px rgb(0 0 0 / 0.3);
+}
+ .asset-master input{
+
+    outline: none;
+
+    border: hidden;
+
+    padding-left: 10px;
+
+    width: 95%;
+    height: 25px;
+    cursor: pointer;
+
+}
+
+.asset-master select{
+
+    outline: none;
+
+    border: hidden;
+
+    padding-left: 5px;
+
+    width: 95%;
+    height: 25px;
+
+    cursor: pointer;
+
+} 
+/* .asset-master input{ */
+    /* border: none;
+    outline: none;
+    
+} */
+.asset-master input[type="submit"]{
+    cursor: pointer;
+    width: 45%;
+    height: 50px;
+    font-size: 1rem;
+}
+.asset-master input[type="reset"]{
+    cursor: pointer;
+    width: 45%;
+    height: 50px;
+    font-size: 1rem;
+}
+.asset-master input[type="submit"]:hover{
+    background-color: grey;
+    color: var(--secondary-col);
+}
+.asset-master input[type="reset"]:hover{
+    color: var(--secondary-col);
+    background-color: grey;
+}

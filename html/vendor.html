@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/vendor.css">
+    <title>Team Project - Vendor</title>
+</head>
+<body>
+    <h1 align="center">Vendor Creation</h1>
+
+    
+    <div class="container">
+        <p>Create New Vendor</p>
+        <form action="">
+            <table cellpadding="8" align="center">
+                <!-- vendor names -->
+                <tr class="form_item">
+                    <td>Vendor Name :</td>
+                    <td>
+                        <select name="course" id="">
+                            <option value="none" selected disabled hidden>select vendor name</option>
+                            <option value="samsung">Samsung</option>
+                            <option value="mi">Mi</option>
+                            <option value="vivo">Vivo</option>
+                            <option value="softlandindia">Softland India</option>
+                            <option value="mobio">Mobio</option>
+                            <option value="ICOFSS">ICOFSS</option>
+                            <option value="wifisolutions">Wifi Solutions</option>
+                            <option value="talentservices">Talent Services</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- vendor type -->
+                <tr>
+                    <td>Vendor Type : </td>
+                    <td>
+                        <input type="radio" name="vendortype" id="">Supplier</input>
+                    </td>
+                </tr>
+
+
+                <!-- Asset Type -->
+                <tr class="form_item">
+                    <td>Asset Type :</td>
+                    <td>
+                        <select name="course" id="">
+                            <option value="none" selected disabled hidden>select asset type</option>
+                            <option value="mobile">Mobile</option>
+                            <option value="terminalprinter">Terminal Printer</option>
+                            <option value="sensor">Sensor</option>
+                            <option value="gateway">Gateway</option>
+                            <option value="laptop">Laptop</option>
+                            <option value="boombarrier">Boom Barrier</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <!-- Valid From Date -->
+                <tr class="form_item">
+                    <td>Valid From : </td>
+                    <td><input type="date" name="validfrom" id=""></td>
+                </tr>
+
+
+                <!-- Valid Till Date -->
+                <tr class="form_item">
+                    <td>Valid Till : </td>
+                    <td><input type="date" name="validto" id=""></td>
+                </tr>
+
+
+                <!-- Address -->
+                <tr class="form_item">
+                    <td>Address : </td>
+                    <td><textarea name="address" id="" cols="30" rows="2" maxlength="200"></textarea></td>
+                </tr>
+
+                <!--Submit button-->
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Register" class="button">
+                        <input type="reset" value="Clear">
+                    </td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    
+</body>
+</html>

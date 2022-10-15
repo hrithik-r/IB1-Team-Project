@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h2>Enter the purchase details</h2>
+            <hr>
+        </div>
+        <form action="success.html" method="post" name="purchaseform">
+            <input type="hidden" class="pd_id" class="form_input" >
+            <!-- form order no  -->
+            <div class="form_item">
+                <label for="order_no">Order No</label>
+                <div class="form_field">
+                    <input type="text" class="pd_order_no" class="form_input" placeholder="Purchase Order No" maxlength="10">
+                </div>
+            </div>
+            <!-- asset type -->
+            <div class="form_item">
+                <label for="asset_type">Asset Type</label>
+                <div class="form_field">
+                    <select name="asset_type" id="">
+                        <option value="none" selected disabled hidden>select</option>
+                        <option value="mobile" >Mobile</option>
+                        <option value="thermalprinter" >Thermal Printer</option>
+                        <option value="gateway" >Gateway</option>
+                        <option value="boombarrier" >Boom Barrier</option>
+                        <option value="laptop" >Laptop</option>
+                        <option value="sensor" >Sensor</option>
+                    </select>
+                </div>
+            </div>
+            <!-- quantity -->
+            <div class="form_item">
+                <label for="order_no">Quantity</label>
+                <div class="form_field">
+                    <input type="number" class="pd_quantity" class="form_input" placeholder="Quantity" min="0">
+                </div>
+            </div>
+            <!-- vendor name -->
+            <div class="form_item">
+                <label for="vendor_name">Vendor Name</label>
+                <div class="form_field">
+                    <select name="vendor_name" id="">
+                        <option value="none" selected disabled hidden>select</option>
+                        <option value="samsung" >   Samsung</option>
+                        <option value="mi" >MI</option>
+                        <option value="vivo" >Vivo</option>
+                        <option value="softlandindia" >Softland India</option>
+                        <option value="mobio" >Mobio</option>
+                        <option value="icofss" >ICODSS</option>
+                        <option value="wifisolutions" >Wifi Solutions</option>
+                        <option value="icofss" >Talent Services</option>
+                    </select>
+                    </select>
+                    </select>
+                </div>
+            </div>
+            <!-- order date -->
+            <div class="form_item">
+                <label for="order_date">Order Date</label>
+                <div class="form_field">
+                    <input type="date" class="pd_order_date" class="form_input" placeholder="Order Date(dd-mm-yyyy)">
+                </div>
+            </div>
+            <!-- delivery date -->
+            <div class="form_item">
+                <label for="order_date">Delivery Date</label>
+                <div class="form_field">
+                    <input type="date" class="pd_delivery_date" class="form_input" placeholder="Delivery Date(dd-mm-yyyy)">
+                </div>
+            </div>
+            <!-- status  -->
+            <div class="form_item">
+                <label for="order_status">Order Status</label>
+                <div class="form_field">
+                    <select name="order_status" id="">
+                        <option value="none" selected disabled hidden>select</option>
+                        <option value="poraised">PO Raised with supplier</option>
+                        <option value="awaitingdelivery" >Awaiting delivery by supplier</option>
+                        <option value="consignment" >Consignment recieved</option>
+                        <option value="assetdetails" >Asset detail registered internally</option>
+                        <option value="allocatedresourses" >Asset allocated to resourses</option>
+                        <option value="identityfaulty" >Identity validity</option>
+                        <option value="replacedrepaired" >Replaced- repaired</option>
+                    </select>
+                    </select>
+                    </select>
+                </div>
+            </div>
+            <div class="form_submit">
+                <input type="submit" name="submit_button" class="submit_button" value="Purchase now">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
