@@ -8,9 +8,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: #A6D9F7;
     margin: 10px 35%;
-    background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -25,8 +24,8 @@ body{
     width: 300px;
     display: flex;
     flex: row;
+    background-color: white;
     align-items: center;
-    border: 1px #A6D9F7 solid;
     border-radius: 5px;
 }
 .form_item input{
@@ -55,17 +54,13 @@ body{
 .submit_button{
     width: 120px;
     height: 30px;
-    background-color:#81d3fc ;
+    border:1px #81d3fc solid;
     display: flex;
     justify-content: center;
     border: none;
     outline: none;
     cursor: pointer;
-    color: white;
+    color: black;
     border-radius: 5px;
     margin-top: 5px;
-}
-
-.submit_button:hover{
-    background-color:#45baf5;
 }
