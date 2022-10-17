@@ -7,7 +7,7 @@ body{
     font-family: 'Open Sans', sans-serif;
     /* font-weight: 100; */
     /* font-size: 20px; */
-    color: var(--secondary-col);
+    /* color: var(--secondary-col); */
     background-color: var(--primary-col);
     
 }
