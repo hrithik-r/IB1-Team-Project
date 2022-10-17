@@ -5,9 +5,9 @@
 body{
     background-color: var(--primary-col);
     font-family: 'Open Sans', sans-serif;
-    font-weight: 100;
-    font-size: 20px;
-    /* color: var(--secondary-col); */
+    /* font-weight: 100; */
+    /* font-size: 20px; */
+    color: var(--secondary-col);
     background-color: var(--primary-col);
     
 }
