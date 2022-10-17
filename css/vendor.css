@@ -101,3 +101,7 @@ body{
     background-color: #fc2727;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 0.8);
   }
+
+  footer{
+    bottom: 0;
+  }
