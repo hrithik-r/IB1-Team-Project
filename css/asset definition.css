@@ -105,12 +105,16 @@ body{
     background-color: #fc2727;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 0.8);
   }
-<<<<<<< HEAD
   .footer{
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-=======
->>>>>>> fb7f25c209639b5126780d8943dde4960a2cb67f
+
+
+
+.errmsg{
+  color: red;
+  font-size: 15px;
+}

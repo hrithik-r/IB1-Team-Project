@@ -1,8 +1,8 @@
 
 function validateForm(theform){
     return (isNotEmpty(assetName,"select asset name",assetNameErr) &&
-            isNotEmpty(assetType,"select asset type",assetTypeErr) &&
-            isOn(classType,"select class of asset",classTypeErr) 
+            isNotEmpty(assetType,"select asset type",assetTypeErr) 
+            // isOn(classType,"select class of asset",classTypeErr) 
             );
 
 }
