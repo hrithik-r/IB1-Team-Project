@@ -1,6 +1,5 @@
 *{
     box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
 }
 body{
     background-color: #FAFFFD;
@@ -11,11 +10,6 @@ body{
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 5%;
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-            flex-direction: column;
     border-radius: 9px;
     box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
 }

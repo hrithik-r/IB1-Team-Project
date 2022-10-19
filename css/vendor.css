@@ -2,6 +2,38 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+
+/* navbar */
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+.navbar li {
+    float: left;
+}
+  
+.navbar li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navbar li a:hover:not(.active) {
+    background-color: #A6D9F7;
+}
+  
+.navbar .active {
+    background-color: #A6D9F7;
+}
+
+
+/* container */
 .container{
     background-color: #A6D9F7;
     margin-top: 2%;
@@ -69,9 +101,16 @@ body{
     background-color: #fc2727;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 0.8);
   }
+<<<<<<< HEAD
   .footer{
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+=======
+
+  footer{
+    bottom: 0;
+  }
+>>>>>>> fb7f25c209639b5126780d8943dde4960a2cb67f

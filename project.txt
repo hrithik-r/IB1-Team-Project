@@ -12,3 +12,10 @@ Font: Open Sans
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
 Sidebar for navigation.
+
+
+
+reference topic :
+        Web Storage
+        Application Center
+        web worker
