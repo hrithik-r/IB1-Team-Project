@@ -1,13 +1,10 @@
 
-function validateForm(){
-        return (isNotEmpty(vendorName,"select vendor name",nameErr) && 
-                // isOn(vendorType,"select vendor type",vendorTypeErr) &&
-                isNotEmpty(assetType,"select asset type",assetTypeErr) &&
-                isNotEmpty(validFrom,"enter the valid from date",validFromErr) &&
-                isNotEmpty(validTill,"enter valid till date",validTillErr) &&
-                isNotEmpty(address,"enter address ",addressErr)
-                );
-    
+function validateForm(theform){
+    return (isNotEmpty(assetName,"select asset name",assetNameErr) &&
+            isNotEmpty(assetType,"select asset type",assetTypeErr) &&
+            isOn(classType,"select class of asset",classTypeErr) 
+            );
+
 }
 
 
@@ -20,7 +17,8 @@ function isNotEmpty(inpEle,errMsg,outEle){
 }
 
 function isOn(inpEle,errMsg,outEle){
-    isValid = (inpEle.value !== On);
+    console.log(inpEle.value);
+    isValid = (inpEle.value !== undefined);
     postValidation(isValid,inpEle,errMsg,outEle);
     return isValid;
 }

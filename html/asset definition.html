@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/asset definition.css">
     <title>Team Project - Asset Definition</title>
+
+    <script src="../javascript/asset definition.js"></script>
 </head>
 <body>
 
@@ -28,14 +30,14 @@
     
     <div class="container">
         <p></p>
-        <form action="">
+        <form action="" method="get" id="assetForm" onsubmit="return validateForm()">
             <table cellpadding="8" align="center">
                 <!-- vendor names -->
                 <tr class="form_item">
                     <td>Asset Name :</td>
                     <td>
-                        <select name="course" id="">
-                            <option value="none" selected disabled hidden>select asset name</option>
+                        <select name="assetName" id="assetName">
+                            <option value="" selected disabled hidden>select asset name</option>
                             <option value="geomangeticsensor">Geo Mangetic Sensor -Ground</option>
                             <option value="loragateway">LoRaGateway -Tata</option>
                             <option value="mobile">Mobile Phone</option>
@@ -48,14 +50,15 @@
                             <option value="loragateway">Lora Gateway -ICOFSS</option>
                         </select>
                     </td>
+                    <td id="assetNameErr" class="errmsg"></td>
                 </tr>
 
                 <!-- Asset type -->
                 <tr class="form_item">
                     <td>Asset Type :</td>
                     <td>
-                        <select name="course" id="">
-                            <option value="none" selected disabled hidden>select asset type</option>
+                        <select name="assetType" id="assetType">
+                            <option value="" selected disabled hidden>select asset type</option>
                             <option value="mobile">Mobile</option>
                             <option value="thermalprinter">Thermal Printer</option>
                             <option value="sensor">Sensor</option>
@@ -64,23 +67,25 @@
                             <option value="boombarrier">Boom Barrier</option>
                         </select>
                     </td>
+                    <td id="assetTypeErr" class="errmsg"></td>
                 </tr>
 
 
                 <!-- class -->
                 <tr>
                     <td>Class : </td>
-                    <td>
-                        <input type="radio" name="class" id="">HW</input>
-                        <input type="radio" name="class" id="">SW</input>
+                    <td id="classType">
+                        <input type="radio" value="hw" name="class" >HW</input>
+                        <input type="radio" value="sw" name="class" >SW</input>
                     </td>
+                    <td id="classTypeErr" class="errmsg"></td>
                 </tr>
 
                 <!--Submit button-->
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" value="Submit" class="button">
+                        <input type="submit" value="Submit" id="btnSubmit" class="button">
                         <input type="reset" value="&#x21bb;" class="reset">
                     </td>
                 </tr>
