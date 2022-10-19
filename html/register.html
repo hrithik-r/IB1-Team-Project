@@ -8,24 +8,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <title>Register</title>
 </head>
 <body>
     <h1 align="center">Enter Details to Register</h1>
     <div class="container">
-        <form action="vendor.html" name="register">
+        <form action="vendor.html" name="register" class="form-group">
             <table align="center">
                 <tr>
                     <td><label for="firstname">First Name</label></td>
-                    <td><input type="text" id="firstname" placeholder="Firstname" required></td>
+                    <td><input type="text" id="firstname" placeholder="Firstname" class="form-control" required></td>
                 </tr>
                 <tr>
                     <td><label for="lastname">Last Name</label></td>
-                    <td><input type="text" id="lastname" placeholder="Lastname" required></td>
+                    <td><input type="text" id="lastname" placeholder="Lastname" class="form-control" required></td>
                 </tr>
                 <tr>
                     <td><label for="firstname">Age</label></td>
-                    <td><input type="number" id="age" placeholder="Age" min="18" max="100" required></td>
+                    <td><input type="number" id="age" placeholder="Age" min="18" max="100" class="form-control" required></td>
                 </tr>
                 <tr>
                     <td><label for="gender">Gender</label></td>
@@ -35,11 +36,11 @@
                 </tr>
                 <tr>
                     <td><label for="address">Address</label></td>
-                    <td><textarea id="address" name="address" cols="30" rows="5" required></textarea></td>
+                    <td><textarea id="address" name="address" cols="30" rows="3" class="form-control" required></textarea></td>
                 </tr>
                 <tr>
                     <td><label for="phonenum">Phone Number</label></td>
-                    <td><input type="tel" name="phonenum" id="phonenum" max="10" placeholder="9876543210" required></td>
+                    <td><input type="tel" name="phonenum" id="phonenum" max="10" class="form-control" placeholder="10-Digit Phone Number" required></td>
                 </tr>
                 <tr>
                     <td></td>

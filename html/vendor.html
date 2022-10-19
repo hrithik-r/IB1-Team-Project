@@ -8,7 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
     <title>Team Project - Vendor</title>
+
+    <script src="../javascript/vendor.js"></script>
+    
 </head>
 <body>
 
@@ -27,14 +31,14 @@
     
     <div class="container">
         <p>Create New Vendor</p>
-        <form action="">
+        <form action="" method="get" id="vendorForm" onsubmit="return validateForm()">
             <table cellpadding="8" align="center">
                 <!-- vendor names -->
                 <tr class="form_item">
                     <td>Vendor Name :</td>
                     <td>
-                        <select name="course" id="">
-                            <option value="none" selected disabled hidden>select vendor name</option>
+                        <select name="vendorName" id="vendorName">
+                            <option value="" selected disabled hidden>select vendor name</option>
                             <option value="samsung">Samsung</option>
                             <option value="mi">Mi</option>
                             <option value="vivo">Vivo</option>
@@ -45,14 +49,16 @@
                             <option value="talentservices">Talent Services</option>
                         </select>
                     </td>
+                    <td id="nameErr" class="errmsg"></td>
                 </tr>
 
                 <!-- vendor type -->
                 <tr>
                     <td>Vendor Type : </td>
                     <td>
-                        <input type="radio" name="vendortype" id="">Supplier</input>
+                        <input type="radio" name="vendorType" id="vendorType">Supplier</input>
                     </td>
+                    <td id="vendorTypeErr" class="errmsg"></td>
                 </tr>
 
 
@@ -60,8 +66,8 @@
                 <tr class="form_item">
                     <td>Asset Type :</td>
                     <td>
-                        <select name="course" id="">
-                            <option value="none" selected disabled hidden>select asset type</option>
+                        <select name="assetType" id="assetType">
+                            <option value="" selected disabled hidden>select asset type</option>
                             <option value="mobile">Mobile</option>
                             <option value="terminalprinter">Terminal Printer</option>
                             <option value="sensor">Sensor</option>
@@ -70,33 +76,37 @@
                             <option value="boombarrier">Boom Barrier</option>
                         </select>
                     </td>
+                    <td id="assetTypeErr" class="errmsg"></td>
                 </tr>
 
                 <!-- Valid From Date -->
                 <tr class="form_item">
                     <td>Valid From : </td>
-                    <td><input type="date" name="validfrom" id=""></td>
+                    <td><input type="date" name="validfrom" id="validFrom"></td>
+                    <td id="validFromErr" class="errmsg"></td>
                 </tr>
 
 
                 <!-- Valid Till Date -->
                 <tr class="form_item">
                     <td>Valid Till : </td>
-                    <td><input type="date" name="validto" id=""></td>
+                    <td><input type="date" name="validto" id="validTill"></td>
+                    <td id="validTillErr" class="errmsg"></td>
                 </tr>
 
 
                 <!-- Address -->
                 <tr class="form_item">
                     <td>Address : </td>
-                    <td><textarea name="address" id="" cols="30" rows="2" maxlength="200"></textarea></td>
+                    <td><textarea name="address" id="address" cols="30" rows="2" maxlength="200"></textarea></td>
+                    <td id="addressErr" class="errmsg"></td>
                 </tr>
 
                 <!--Submit button-->
                 <tr>
                     <td></td>
                     <td>
-                        <input type="submit" value="Submit" class="button">
+                        <input type="submit" value="Submit" id="btnSubmit" class="button">
                         <input type="reset" value="&#x21bb;" class="reset">
                     </td>
                 </tr>

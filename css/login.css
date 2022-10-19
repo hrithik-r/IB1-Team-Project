@@ -25,7 +25,23 @@ body{
 #password{
     border-radius: 4px;
 }
-#login {
+.required{
+    color: red;
+}
+#elmUsernameError{
+    color: red;
+}
+#elmPasswordError{
+    color: red;
+}
+#elmTypeError{
+    color: red;
+}
+#elmAttempts{
+    color: red;
+    font-weight: bold;
+}
+/* #loginbtn {
     border-radius: 4px;
     background-color: white;
     color: black;
@@ -39,11 +55,10 @@ body{
     cursor: pointer;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 0.3);
 }
-#login:hover {
+#loginbtn:hover {
     background-color: #66c3f9;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 0.8);
-    /* border: 1px black; */
-}
+} */
 .footer{
     margin-top: 100px;
     display: flex;

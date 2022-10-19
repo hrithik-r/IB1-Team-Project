@@ -101,9 +101,16 @@ body{
     background-color: #fc2727;
     box-shadow: 7px 7px 5px rgb(0 0 0 / 0.8);
   }
+<<<<<<< HEAD
   .footer{
     margin-top: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+=======
+
+  footer{
+    bottom: 0;
+  }
+>>>>>>> 558a4b075759ae06b5cb553c3aa2b318b6719c08
