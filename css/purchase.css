@@ -43,6 +43,7 @@ body{
     align-items: center;
     background-color: #A6D9F7;
     margin: 10px 35%;
+    width: 350px;
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -60,6 +61,10 @@ body{
     background-color: white;
     align-items: center;
     border-radius: 5px;
+}
+.error{
+    color: red;
+    font-size: 12px;
 }
 .form_item input{
     outline: none;

@@ -28,21 +28,22 @@
             <h2>Enter the purchase details</h2>
             <hr>
         </div>
-        <form action="success.html" method="post" name="purchaseform">
+        <form action="" method="post" id="purchaseform" >
             <input type="hidden" class="pd_id" class="form_input" >
             <!-- form order no  -->
             <div class="form_item">
                 <label for="order_no">Order No</label>
                 <div class="form_field">
-                    <input type="text" class="pd_order_no" class="form_input" placeholder="Purchase Order No" maxlength="10">
+                    <input type="text" name="pd_order_no" id="pd_order_no" class="form_input" placeholder="Purchase Order No" maxlength="10">
                 </div>
+                <span for="order_no_err" class="error" name="order_no_err" id="order_no_err"></span>
             </div>
             <!-- asset type -->
             <div class="form_item">
                 <label for="asset_type">Asset Type</label>
                 <div class="form_field">
-                    <select name="asset_type" id="">
-                        <option value="none" selected disabled hidden>select</option>
+                    <select name="asset_type" id="pd_asset_type">
+                        <option value="select" selected disabled hidden>select</option>
                         <option value="mobile" >Mobile</option>
                         <option value="thermalprinter" >Thermal Printer</option>
                         <option value="gateway" >Gateway</option>
@@ -50,6 +51,8 @@
                         <option value="laptop" >Laptop</option>
                         <option value="sensor" >Sensor</option>
                     </select>
+                    <br>
+                    <span for="order_no_err" class="error" name="order_no_err" id="pd_asset_err"></span>
                 </div>
             </div>
             <!-- quantity -->
@@ -63,9 +66,9 @@
             <div class="form_item">
                 <label for="vendor_name">Vendor Name</label>
                 <div class="form_field">
-                    <select name="vendor_name" id="">
-                        <option class="options" value="none" selected disabled hidden>select</option>
-                        <option class="options" value="samsung" >Samsung</option>
+                    <select name="vendor_name" id="pd_vendor_name">
+                        <option value="select" selected disabled hidden>select</option>
+                        <option value="samsung" >Samsung</option>
                         <option value="mi" >MI</option>
                         <option value="vivo" >Vivo</option>
                         <option value="softlandindia" >Softland India</option>
@@ -74,8 +77,7 @@
                         <option value="wifisolutions" >Wifi Solutions</option>
                         <option value="icofss" >Talent Services</option>
                     </select>
-                    </select>
-                    </select>
+                    <span for="order_no_err" class="error" name="order_no_err" id="pd_vendor_err"></span>
                 </div>
             </div>
             <!-- order date -->
@@ -96,8 +98,8 @@
             <div class="form_item">
                 <label for="order_status">Order Status</label>
                 <div class="form_field">
-                    <select name="order_status" id="">
-                        <option value="none" selected disabled hidden>select</option>
+                    <select name="order_status" id="pd_order_status">
+                        <option value="select" selected disabled hidden>select</option>
                         <option value="poraised">PO Raised with supplier</option>
                         <option value="awaitingdelivery" >Awaiting delivery by supplier</option>
                         <option value="consignment" >Consignment recieved</option>
@@ -106,8 +108,7 @@
                         <option value="identityfaulty" >Identity validity</option>
                         <option value="replacedrepaired" >Replaced- repaired</option>
                     </select>
-                    </select>
-                    </select>
+                    <span for="order_no_err" class="error" name="order_no_err" id="pd_order_err"></span>
                 </div>
             </div>
             <div class="form_submit">
@@ -121,5 +122,6 @@
             Copyrights &copy; <a href="">Arun</a>
         </div>
     </footer>
+    <script defer type="text/javascript" src="../javascript/purchaseorder.js"></script>
 </body>
 </html>
